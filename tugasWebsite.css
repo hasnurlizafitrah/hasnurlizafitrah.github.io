@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 50px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #AF8260;
+}
+.container {
+    display: grid;
+}
+.header {
+    display: grid;
+    grid-template-areas: 
+    "gbesar fitur-1"
+    "gbesar fitur-2";
+    gap : 5px;
+}
+.logo-bulat {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Membuat gambar berbentuk bulat */
+    object-fit: cover; /* Menyesuaikan gambar agar pas di dalam bentuk lingkaran */
+    float: left;
+}
+.gbesar {
+    grid-area: gbesar;
+    background-image: url(img/roti.jpg);
+    min-height: 300px;
+    padding: 50px;
+    background-size: cover;
+    background-position: center; 
+}
+.fitur {
+    display: grid;
+    background-color: #543310;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.fitur-1 {
+    grid-area: fitur-1;
+    background-image:url(img/Croissant.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+.fitur-2 {
+    grid-area: fitur-2;
+    background-image:url(img/donat.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+
+.home {
+    order: -1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.home ul {
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 5px;
+}
+.home a {
+    border-radius: 10px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: #543310;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.1em;
+}
+.home .brand{
+    color: #543310;
+    font-size: 1.3em;
+}
+.service {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+.services {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    background-color: wheat;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.sejarah {
+    grid-column: 1 / -1; /* Membuat elemen mengambil seluruh kolom */
+    padding: 20px; /* Menambahkan padding untuk estetika */
+    background-color: wheat; /* Mengatur warna latar belakang */
+    color: #543310;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.visimisi {
+    grid-column: 1 / -1; /* Membuat elemen mengambil seluruh kolom */
+    padding: 20px; /* Menambahkan padding untuk estetika */
+    background-color: wheat; /* Mengatur warna latar belakang */
+    color: #543310;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.service h1 {
+    background-color: #543310;
+    border-radius: 10px;
+    color: wheat;
+    display: grid;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    margin-top: 10px;
+}
+.container2 h2{
+    color: #543310;
+}
+.form h1{
+    background-color: #543310;
+    border-radius: 10px;
+    color: wheat;
+    display: grid;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px;
+}
+.menu h1 {
+    background-color: #543310;
+    border-radius: 10px;
+    color: wheat;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.menu h3{
+    text-align: center;
+    background-color: #543310;
+    color: wheat;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.menu h5{
+    text-align: center;
+    background-color: wheat;
+    color: #543310;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container2 {
+    max-width: 1500px;
+    margin: auto;
+    background: wheat;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #543310;
+}
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #543310;
+}
+
+.container2 label {
+    text-align: center;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid wheat;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #543310;
+    color: wheat;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #6b4c3a;
+}
+label{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contact h1{
+    background-color: #543310;
+    border-radius: 10px;
+    color: wheat;
+    display: grid;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.contact{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #543310;
+}
+.informasikontak {
+    max-width: 1500px;
+    margin: auto;
+    background: wheat;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #543310;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.jamoperasional{
+    max-width: 1500px;
+    margin: auto;
+    background: wheat;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #543310;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.login h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:#543310;
+    border-radius: 10px;
+    color: wheat;
+    display: grid;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    
+}
+.login-container {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 1500px;
+    margin: auto;
+    background: wheat;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #543310;
+}
+.login-container label{
+    text-align: center;
+    padding-left: 80px;
+    color: #543310;
+}
+.login-container input{
+    width: 1050px;
+    margin-left: 35px;
+}
+.login-container button{
+    width: 1070px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: cent;
+    width: 95%;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.btn-login {
+    background-color: #543310;
+    color: wheat;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: #6e4c1c;
+}
+
+.login p {
+    margin-top: 15px;
+}
+.footer {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    padding-top: 15px;
+    text-align: center;
+    color: wheat;
+    display: inline-block;
+    border-top: 3px solid wheat;
+    background-color: #543310;
+    min-height: 85px;
+    
+}
+.footer img {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+    
+
+
+
